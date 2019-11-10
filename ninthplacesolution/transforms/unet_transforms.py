@@ -60,6 +60,10 @@ def compute_padding(h, w, n=128):
     return dy0, dy1, dx0, dx1
 
 
+#There is a notion of padding the pixels in opencv. Any image is characterized by 4 locations ,(X_1,x_2,y_1,y_2)/
+#Copy src image to destination image. Apply the border reflect padding.
+#https://docs.opencv.org/2.4/modules/imgproc/doc/filtering.html?highlight=copymakeborder#int%20borderInterpolate(int%20p,%20int%20len,%20int%20borderType)
+
 class PadToNxN(object):
     """Pad to image size NxN using border reflection."""
 
