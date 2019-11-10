@@ -49,7 +49,7 @@ parser.add_argument("--lr-scheduler-patience", type=int, default=15,
                     help='lr scheduler plateau: Number of epochs with no improvement after which learning rate will be reduced')
 parser.add_argument("--lr-scheduler-step-size", type=int, default=100,
                     help='lr scheduler step: number of epochs of learning rate decay.')
-parser.add_argument("--3it')
+parser.add_argument("--3it")
 parser.add_argument("--lr-scheduler-warmup", type=int, default=10,
                     help='The number of epochs to linearly increase the learning rate. (noam only)')
 parser.add_argument("--max-epochs", type=int, default=350, help='max number of epochs')
